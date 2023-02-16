@@ -1,0 +1,48 @@
+{
+  "name": "moki-browser",
+  "version": "0.0.1",
+  "description": "Moki Electron Browser",
+  "main": "src/main/index.ts",
+  "scripts": {
+    "start:main": "cross-env NODE_ENV=development PORT=9091 electronmon -r ts-node/register/transpile-only ."
+  },
+  "author": "ClearLuvMoki",
+  "license": "ISC",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.5",
+    "@electron-forge/maker-deb": "^6.0.5",
+    "@electron-forge/maker-rpm": "^6.0.5",
+    "@electron-forge/maker-squirrel": "^6.0.5",
+    "@electron-forge/maker-zip": "^6.0.5",
+    "child_process": "^1.0.2",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.7.3",
+    "electron": "23.1.0",
+    "electronmon": "^2.0.2",
+    "file-loader": "^6.2.0",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "html-webpack-plugin": "^5.5.0",
+    "less-loader": "^11.1.0",
+    "mini-css-extract-plugin": "^2.7.2",
+    "postcss-loader": "^7.0.2",
+    "speed-measure-webpack-plugin": "^1.5.0",
+    "style-loader": "^3.3.1",
+    "terser-webpack-plugin": "^5.3.6",
+    "ts-loader": "^9.4.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5",
+    "webpack": "^5.75.0",
+    "webpack-merge": "^5.8.0",
+    "webpack-obfuscator": "^3.5.1"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
+  },
+  "electronmon": {
+    "patterns": [
+      "!./src/renderer/**/*",
+      "!node_modules"
+    ],
+    "logLevel": "quiet"
+  }
+}
