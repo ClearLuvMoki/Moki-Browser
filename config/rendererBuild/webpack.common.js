@@ -40,7 +40,7 @@ module.exports = {
       '@/layout': path.join(srcRendererPath, '/layout'),
       '@/store': path.join(srcRendererPath, '/store'),
       '@/logger': path.join(srcRendererPath, '/logger'),
-      '@/hooks': path.join(srcRendererPath, '/hooks'),
+      '@/types': path.join(__dirname, '../../@types/'),
       '@/resources': path.join(__dirname, '../../resources/'),
       '@/request': path.join(srcRendererPath, '/request/'),
     },

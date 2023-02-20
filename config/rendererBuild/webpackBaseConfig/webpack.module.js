@@ -3,7 +3,6 @@ module.exports = {
     {
       test: /\.[jt]sx?$/,
       exclude: /node_modules/,
-      include: /src/,
       use: [
         {
           loader: 'ts-loader',

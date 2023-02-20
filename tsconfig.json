@@ -39,8 +39,8 @@
       "@/store/*": [
         "./src/renderer/store/*"
       ],
-      "@/request/*": [
-        "./src/renderer/request/*"
+      "@/types/*": [
+        "./@types/*"
       ]
     }
   },
