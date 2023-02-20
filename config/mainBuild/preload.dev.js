@@ -10,7 +10,6 @@ const configuration = {
 
   entry: {
     preload: path.join(srcMainPath, './preload/index.ts'),
-    webviewPreload: path.join(srcMainPath, './preload/webviewPreload.ts'),
   },
 
   output: {
